@@ -494,3 +494,187 @@ footer button {
 footer p {
   color: #747474;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 12px 24px;
+  }
+
+  .trust-logos {
+    padding: 40px 60px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ai-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-ai {
+    width: 90%;
+    height: auto;
+  }
+
+  .enterprice {
+    padding: 80px 60px;
+  }
+
+  .customers {
+    padding: 60px 40px;
+  }
+
+  .customers-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .started-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .more {
+    padding: 60px 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  nav div:last-child {
+    display: flex;
+    gap: 10px;
+  }
+
+  .main-header h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .main-header p {
+    font-size: 16px;
+  }
+
+  .email-input {
+    flex-direction: column;
+    gap: 12px;
+    border: none;
+  }
+
+  .email-input input {
+    width: 100%;
+    border: 1px solid #9dbea2;
+    border-radius: 8px;
+  }
+
+  .trust-logos {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px;
+  }
+
+  .AI-info {
+    padding: 60px 20px;
+  }
+
+  .text-ai h1 {
+    font-size: 32px;
+  }
+
+  .assistant {
+    padding: 60px 20px;
+  }
+
+  .assistant h1 {
+    font-size: 32px;
+  }
+
+  .enterprice {
+    padding: 60px 20px;
+  }
+
+  .enterprice-heading p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .btn-company {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .btn-company button {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .customers-cards {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .started-text h1 {
+    font-size: 34px;
+  }
+
+  .started-text button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .logos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header h1 {
+    font-size: 30px;
+  }
+
+  .text-ai h1,
+  .customers-text h1 {
+    font-size: 28px;
+  }
+
+  .started-text h1 {
+    font-size: 28px;
+  }
+
+  .card-ai,
+  .enterprise-card,
+  .started-card {
+    padding: 20px;
+  }
+}
+
+.trust-logos img {
+  border: none !important;
+  border-radius: 0 !important;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
